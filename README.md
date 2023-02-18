@@ -17,3 +17,7 @@ That was quite fun to understand how to implement DRF, I'm really liked it
 ### 4 hour (18.02.2023 - 01:50 PM)
 
 Starting new project Movies and creating DB relations and API to them.
+
+### 5 hour (18.02.2023 - 03:23 PM)
+
+Done with REST API part and now starting React project just basics

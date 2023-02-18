@@ -7,6 +7,20 @@ class Movie(models.Model):
     title = models.CharField(max_length=32)
     description = models.CharField(max_length=360)
 
+    def no_of_ratings(self):
+        ratings = Rating.objects.filter(movie=self)
+        return len(ratings)
+
+    def avg_rating(self):
+        sum_result = 0
+        ratings = Rating.objects.filter(movie=self)
+        for rating in ratings:
+            sum_result += rating.stars
+        if len(ratings) > 0:
+            return sum_result / len(ratings)
+        else:
+            return 0
+
 
 class Rating(models.Model):
     movie = models.ForeignKey(Movie,
@@ -18,4 +32,3 @@ class Rating(models.Model):
     class Meta:
         unique_together = (('user', 'movie'),)
         index_together = (('user', 'movie'),)
-
