@@ -2,21 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Header from './components/header';
+import Footer from './components/footer';
 import reportWebVitals from './reportWebVitals';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
-const routing = (
-  <BrowserRouter>
-    <div>
-      <Route path="/" component={App}></Route>
-    </div>
-  </BrowserRouter>
-);
+export const AnimalsContext = React.createContext(['snake', 'mfs', 'lion']);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {routing}
+    <AnimalsContext.Provider value={animals}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<App />}></Route>
+          <Route path="/header" element={<Header />}></Route>
+          <Route path="/footer" element={<Footer />}></Route>
+        </Routes>
+      </Router>
+    </AnimalsContext.Provider>
   </React.StrictMode>
 );
 

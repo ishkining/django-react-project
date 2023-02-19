@@ -25,3 +25,7 @@ Done with REST API part and now starting React project just basics
 ### 6 hour (19.02.2023 - 8:26 AM)
 
 Basics of React: conditions, loops, etc. and then I have problems with Router rn.
+
+### 7 hour (19.02.2023 - 10:09 AM)
+
+I have problems w/ Routers but I can move throught that and rn problems w/ rendering context.

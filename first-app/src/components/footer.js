@@ -1,34 +1,33 @@
 import React, { Component } from "react";
+import { AnimalsContext } from '../index'
 
 class Footer extends Component{
 
-    state = {
-        name: 'Gazique',
-        age: 23,
-    }
+    // state = {
+    //     name: 'Gazique',
+    //     age: 23,
+    // }
 
-    componentDidMount = () => {
-        this.setState({name: 'MyName'});
-    }
+    // componentDidMount = () => {
+    //     this.setState({name: 'MyName'});
+    // }
 
-    changed = evt => {
-        this.setState({name: evt.target.value});
-        console.log(this.state.name);
-    }
+    // changed = evt => {
+    //     this.setState({name: evt.target.value});
+    //     console.log(this.state.name);
+    // }
 
     render() {
-
-        const animals=['cat', 'dog', 'horse']
-
+        const animalsType = AnimalsContext;
         return (
             <div>
-                {animals.map(animal => {
+                { this.animals.map(animal => {
                     return (
                         <div key={animal.id}>
                             <h1>{animal}</h1>
                         </div>
                     );
-                })}
+                }) }
             </div>
         )
     }
