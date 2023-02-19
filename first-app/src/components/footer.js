@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { AnimalsContext } from '../index'
 
 class Footer extends Component{
 
@@ -16,19 +15,18 @@ class Footer extends Component{
     //     this.setState({name: evt.target.value});
     //     console.log(this.state.name);
     // }
-
+    
     render() {
-        const animalsType = AnimalsContext;
+        const animals = ["ada", "aba", "aca"]
         return (
-            <div>
-                { this.animals.map(animal => {
-                    return (
-                        <div key={animal.id}>
-                            <h1>{animal}</h1>
-                        </div>
-                    );
-                }) }
-            </div>
+                <div>
+                    {animals.map(animal => {
+                        return (
+                            <h1 key={animal}>{animal}</h1>
+                        );
+                    })}
+                    
+                </div>
         )
     }
 }

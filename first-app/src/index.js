@@ -7,12 +7,9 @@ import Footer from './components/footer';
 import reportWebVitals from './reportWebVitals';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
-export const AnimalsContext = React.createContext(['snake', 'mfs', 'lion']);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AnimalsContext.Provider value={animals}>
       <Router>
         <Routes>
           <Route path="/" element={<App />}></Route>
@@ -20,7 +17,6 @@ root.render(
           <Route path="/footer" element={<Footer />}></Route>
         </Routes>
       </Router>
-    </AnimalsContext.Provider>
   </React.StrictMode>
 );
 

@@ -29,3 +29,7 @@ Basics of React: conditions, loops, etc. and then I have problems with Router rn
 ### 7 hour (19.02.2023 - 10:09 AM)
 
 I have problems w/ Routers but I can move throught that and rn problems w/ rendering context.
+
+### 8 hour (19.02.2023 - 11:41 AM)
+
+Fuck this context, Idk but after some processing Ive decided to go along and continue.
