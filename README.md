@@ -21,3 +21,7 @@ Starting new project Movies and creating DB relations and API to them.
 ### 5 hour (18.02.2023 - 03:23 PM)
 
 Done with REST API part and now starting React project just basics
+
+### 6 hour (19.02.2023 - 8:26 AM)
+
+Basics of React: conditions, loops, etc. and then I have problems with Router rn.
