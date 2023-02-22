@@ -33,3 +33,7 @@ I have problems w/ Routers but I can move throught that and rn problems w/ rende
 ### 8 hour (19.02.2023 - 11:41 AM)
 
 Fuck this context, Idk but after some processing Ive decided to go along and continue.
+
+### 9 hour (22.02.2023 - 11:01 PM)
+
+Trying to fetch data from API request but I have problems with corsheaders
